@@ -11,6 +11,7 @@ Is basically ChangeMac_IntWi-Fi but more randomization focused with looping abil
 Also, if it determines that the prefixes specified in the switch-case statement do not work than it will automatically switch to being completely random.
 
 # If the following error shows up but the script still seems to work, its fine; it just kinda does that.
+```
 Get-ChildItem : Requested registry access is not allowed.
 At C:\Users\foxx1\Desktop\ChangeMac_IntWi-Fi_Loop.ps1:73 char:5
 +     Get-ChildItem $regPath | ForEach-Object {
@@ -18,3 +19,4 @@ At C:\Users\foxx1\Desktop\ChangeMac_IntWi-Fi_Loop.ps1:73 char:5
     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...318}\Properties:String) [Get-ChildItem], SecurityEx
    ception
     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetChildItemCommand
+```
